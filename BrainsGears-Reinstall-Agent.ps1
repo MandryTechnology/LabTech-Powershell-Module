@@ -13,3 +13,7 @@ else {
 }
 
 Install-Automate -Server $server -LocationID $location -Token $token -Transcript
+
+function ForceReinstall-Agent {
+	Install-Automate -Server $server -LocationID $location -Token $token -Transcript -Force
+}
