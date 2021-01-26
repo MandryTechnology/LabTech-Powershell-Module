@@ -1,7 +1,7 @@
 #* Script to reinstall the agent using the BrainGears module
 #* Checks if agent is installed, and uses the current LocationID if there already is one.
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-Invoke-Expression(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/MandryTechnology/LabTech-Powershell-Module/master/BrainsGears-Reinstall-Agent.ps1');
+Invoke-Expression(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/Braingears/PowerShell/master/Automate-Module.psm1');
 $server = 'support.mandrytechnology.com'
 $token = 'c3d6126258255ea5f5beb09b6382e4d5'
 # Populate the $Automate variable so we can check if there's a LocationID
