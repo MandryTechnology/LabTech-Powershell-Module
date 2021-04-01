@@ -3,7 +3,7 @@
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 Invoke-Expression(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/Braingears/PowerShell/master/Automate-Module.psm1');
 $server = 'support.mandrytechnology.com'
-$token = 'c3d6126258255ea5f5beb09b6382e4d5'
+$token = '5ee4fbcdad8274ba2b98e36d120cff5b'
 # Populate the $Automate variable so we can check if there's a LocationID
 Confirm-Automate
 # If there's a LocationID, use that; otherwise, just put it in the "New Computers" group for later sorting
